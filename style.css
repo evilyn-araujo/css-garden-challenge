@@ -141,8 +141,11 @@ aside .wrapper h3 {
 }
 
 @media (max-width: 900px) {
-  aside {
-    display: none;
+  aside .wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding-top: 2rem;
   }
 
   footer {
