@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,800;1,100;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #213555;
+  color: #f0f0f0;
+  position: fixed;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+}
+
+header h2 {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer a {
+  background: #213555;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f0f0f0;
+  font-size: 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+footer a:hover {
+  cursor: pointer;
+  background: #4f709c;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #4f709c;
+}
+
+.page-wrapper {
+  width: 100%;
+}
+
+aside .wrapper {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  border-top: 1px solid #213555;
+  margin-top: 2rem;
+}
+
+aside .wrapper h3 {
+  color: #213555;
+  font-weight: 600; /* Removido font-weight: 400; duplicado */
+  font-size: 24px;
+}
+
+.summary {
+  width: 100%;
+  height: 850px;
+  background-image: url("https://images6.alphacoders.com/130/1307777.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: flex-end; /* Alterado de "end" para "flex-end" */
+  justify-content: flex-end;
+  flex-direction: column;
+  font-size: 24px;
+}
+
+.summary p {
+  color: #f0f0f0;
+  width: 500px;
+  text-align: end;
+  padding: 2rem;
+}
+
+.summary :nth-child(2) {
+  font-size: 14px;
+}
+
+.preamble {
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.preamble h3 {
+  color: #213555;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.main {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+.main h3 {
+  color: #213555;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.main p {
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  aside {
+    display: none;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .summary {
+    height: 600px;
+    font-size: 18px;
+  }
+}
